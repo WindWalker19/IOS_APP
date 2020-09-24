@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xylophone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nrb-9M-gJm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ays-v7-jdA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gG-S8-dex" userLabel="C">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KuB-cB-mB3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="5gG-S8-dex" firstAttribute="leading" secondItem="Ays-v7-jdA" secondAttribute="leading" id="5zq-Si-6ZO"/>
+                                            <constraint firstItem="5gG-S8-dex" firstAttribute="top" secondItem="Ays-v7-jdA" secondAttribute="top" id="GMB-8T-OKj"/>
+                                            <constraint firstAttribute="bottom" secondItem="5gG-S8-dex" secondAttribute="bottom" id="Tjb-Ed-VGX"/>
+                                            <constraint firstAttribute="trailing" secondItem="5gG-S8-dex" secondAttribute="trailing" id="c72-I8-8wi"/>
+                                            <constraint firstItem="5gG-S8-dex" firstAttribute="centerX" secondItem="Ays-v7-jdA" secondAttribute="centerX" id="liT-1u-C2d"/>
+                                            <constraint firstItem="5gG-S8-dex" firstAttribute="centerY" secondItem="Ays-v7-jdA" secondAttribute="centerY" id="sEY-uu-Jbu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JP6-6s-ln1">
+                                        <rect key="frame" x="0.0" y="119.66666666666666" width="414" height="99.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYz-tH-BRo">
+                                                <rect key="frame" x="5" y="0.0" width="404" height="99.666666666666671"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <state key="normal" title="D">
+                                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e10-hU-HrM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="GYz-tH-BRo" secondAttribute="trailing" constant="5" id="8ok-bE-5iP"/>
+                                            <constraint firstAttribute="bottom" secondItem="GYz-tH-BRo" secondAttribute="bottom" id="BR7-r0-Dfw"/>
+                                            <constraint firstItem="GYz-tH-BRo" firstAttribute="centerX" secondItem="JP6-6s-ln1" secondAttribute="centerX" id="DCm-GO-XGz"/>
+                                            <constraint firstItem="GYz-tH-BRo" firstAttribute="centerY" secondItem="JP6-6s-ln1" secondAttribute="centerY" id="GMy-gW-msc"/>
+                                            <constraint firstItem="GYz-tH-BRo" firstAttribute="leading" secondItem="JP6-6s-ln1" secondAttribute="leading" constant="5" id="lrp-EJ-WVU"/>
+                                            <constraint firstItem="GYz-tH-BRo" firstAttribute="top" secondItem="JP6-6s-ln1" secondAttribute="top" id="lup-VX-pPf"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZ6-DT-LNq">
+                                        <rect key="frame" x="0.0" y="239.33333333333329" width="414" height="99.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJ5-y0-qw3">
+                                                <rect key="frame" x="10" y="0.0" width="394" height="99.666666666666671"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <state key="normal" title="E">
+                                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e82-Co-xDd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="xJ5-y0-qw3" firstAttribute="centerX" secondItem="JZ6-DT-LNq" secondAttribute="centerX" id="CUm-QM-ggm"/>
+                                            <constraint firstItem="xJ5-y0-qw3" firstAttribute="top" secondItem="JZ6-DT-LNq" secondAttribute="top" id="DmR-9g-3jw"/>
+                                            <constraint firstAttribute="trailing" secondItem="xJ5-y0-qw3" secondAttribute="trailing" constant="10" id="cwh-MD-q7t"/>
+                                            <constraint firstAttribute="bottom" secondItem="xJ5-y0-qw3" secondAttribute="bottom" id="fht-3f-chB"/>
+                                            <constraint firstItem="xJ5-y0-qw3" firstAttribute="leading" secondItem="JZ6-DT-LNq" secondAttribute="leading" constant="10" id="kga-ec-Jrh"/>
+                                            <constraint firstItem="xJ5-y0-qw3" firstAttribute="centerY" secondItem="JZ6-DT-LNq" secondAttribute="centerY" id="zId-Ou-LUA"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DvF-Mt-4nv">
+                                        <rect key="frame" x="0.0" y="359" width="414" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1q-st-f8p">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <state key="normal" title="F">
+                                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EjD-8C-chf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="G1q-st-f8p" secondAttribute="bottom" id="3vg-SB-NKr"/>
+                                            <constraint firstItem="G1q-st-f8p" firstAttribute="centerX" secondItem="DvF-Mt-4nv" secondAttribute="centerX" id="E3H-x7-Jvw"/>
+                                            <constraint firstItem="G1q-st-f8p" firstAttribute="leading" secondItem="DvF-Mt-4nv" secondAttribute="leading" constant="20" id="YGY-uv-dra"/>
+                                            <constraint firstItem="G1q-st-f8p" firstAttribute="top" secondItem="DvF-Mt-4nv" secondAttribute="top" id="l5H-W8-IeI"/>
+                                            <constraint firstAttribute="trailing" secondItem="G1q-st-f8p" secondAttribute="trailing" constant="20" id="oGt-gw-7gL"/>
+                                            <constraint firstItem="G1q-st-f8p" firstAttribute="centerY" secondItem="DvF-Mt-4nv" secondAttribute="centerY" id="sON-W2-g6L"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNZ-h5-o12">
+                                        <rect key="frame" x="0.0" y="479.00000000000006" width="414" height="99.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-wc-4Ng">
+                                                <rect key="frame" x="25" y="0.0" width="364" height="99.666666666666671"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <state key="normal" title="G">
+                                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NT3-mw-Pnf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="RgO-wc-4Ng" firstAttribute="top" secondItem="dNZ-h5-o12" secondAttribute="top" id="35U-xG-OvA"/>
+                                            <constraint firstItem="RgO-wc-4Ng" firstAttribute="leading" secondItem="dNZ-h5-o12" secondAttribute="leading" constant="25" id="dfK-vi-pDs"/>
+                                            <constraint firstAttribute="trailing" secondItem="RgO-wc-4Ng" secondAttribute="trailing" constant="25" id="eMX-37-Mza"/>
+                                            <constraint firstAttribute="bottom" secondItem="RgO-wc-4Ng" secondAttribute="bottom" id="gEk-bc-Dcz"/>
+                                            <constraint firstItem="RgO-wc-4Ng" firstAttribute="centerY" secondItem="dNZ-h5-o12" secondAttribute="centerY" id="mkO-GI-7JI"/>
+                                            <constraint firstItem="RgO-wc-4Ng" firstAttribute="centerX" secondItem="dNZ-h5-o12" secondAttribute="centerX" id="wNO-oW-5Za"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5v-Oi-G0i">
+                                        <rect key="frame" x="0.0" y="598.66666666666663" width="414" height="99.666666666666629"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4F-C2-rW8">
+                                                <rect key="frame" x="30" y="0.0" width="354" height="99.666666666666671"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <state key="normal" title="A">
+                                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qay-XH-GKe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="B4F-C2-rW8" secondAttribute="bottom" id="2kb-Nc-a8a"/>
+                                            <constraint firstItem="B4F-C2-rW8" firstAttribute="centerY" secondItem="G5v-Oi-G0i" secondAttribute="centerY" id="OsU-eF-r4e"/>
+                                            <constraint firstAttribute="trailing" secondItem="B4F-C2-rW8" secondAttribute="trailing" constant="30" id="PZt-9i-pT0"/>
+                                            <constraint firstItem="B4F-C2-rW8" firstAttribute="centerX" secondItem="G5v-Oi-G0i" secondAttribute="centerX" id="iOf-vr-qUZ"/>
+                                            <constraint firstItem="B4F-C2-rW8" firstAttribute="leading" secondItem="G5v-Oi-G0i" secondAttribute="leading" constant="30" id="ovg-NC-Jup"/>
+                                            <constraint firstItem="B4F-C2-rW8" firstAttribute="top" secondItem="G5v-Oi-G0i" secondAttribute="top" id="vPR-nT-rB6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0B-bq-UVv">
+                                        <rect key="frame" x="0.0" y="718.33333333333337" width="414" height="99.666666666666629"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9G-dY-Nm7">
+                                                <rect key="frame" x="35" y="0.0" width="344" height="99.666666666666671"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <state key="normal" title="B">
+                                                    <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Em-4k-qFP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="u9G-dY-Nm7" firstAttribute="top" secondItem="t0B-bq-UVv" secondAttribute="top" id="CXM-AL-rli"/>
+                                            <constraint firstAttribute="trailing" secondItem="u9G-dY-Nm7" secondAttribute="trailing" constant="35" id="Cd9-eO-Ktg"/>
+                                            <constraint firstItem="u9G-dY-Nm7" firstAttribute="centerX" secondItem="t0B-bq-UVv" secondAttribute="centerX" id="iCa-b9-Djk"/>
+                                            <constraint firstAttribute="bottom" secondItem="u9G-dY-Nm7" secondAttribute="bottom" id="nRQ-MB-1ua"/>
+                                            <constraint firstItem="u9G-dY-Nm7" firstAttribute="centerY" secondItem="t0B-bq-UVv" secondAttribute="centerY" id="vRj-jz-uRm"/>
+                                            <constraint firstItem="u9G-dY-Nm7" firstAttribute="leading" secondItem="t0B-bq-UVv" secondAttribute="leading" constant="35" id="vcB-Lt-x8a"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="Nrb-9M-gJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KF1-jy-OpM"/>
+                            <constraint firstItem="Nrb-9M-gJm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lL0-KV-Ccl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nrb-9M-gJm" secondAttribute="bottom" id="mwC-qY-wjI"/>
+                            <constraint firstItem="Nrb-9M-gJm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="weH-Ki-1xT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
